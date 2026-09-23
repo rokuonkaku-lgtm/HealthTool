@@ -35,7 +35,7 @@ public class FeelMain {
                 IO.println("アプリを終了します。");
                 break; // whileループを抜ける
             }
-        } // whileの閉じ
-    } // mainの閉じ
+        } 
+    } 
 }
-} // FeelMainクラスの閉じ
+} 
