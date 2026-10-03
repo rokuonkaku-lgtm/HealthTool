@@ -24,15 +24,18 @@ public class FeelMedi {
 
             IO.println("作成日時: " + formattedDate);
         }
-		 else if (num == 2) { 
+
+    else if (num == 2) { 
     String feel = IO.readln("どのような体調ですか？:");
-    feelList.add(feel); // ★ feelList に追加！
+    feelList.add(feel); // feelListに追加
     IO.println("「" + feel + "」を追加しました！");
 
+    // 作成日時を表示
     LocalDateTime now = LocalDateTime.now();
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm");
     String formattedDate = now.format(formatter);
     IO.println("作成日時: " + formattedDate);
 }
+
 	}
 }

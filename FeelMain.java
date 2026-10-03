@@ -5,6 +5,8 @@ public class FeelMain {
     // todoリスト
     void main() {
         ArrayList<String> feelList = new ArrayList<>();
+        ArrayList<String> mediList = new ArrayList<>();
+
         FeelMedi fm = new FeelMedi();
 		FeelTake ft = new FeelTake();
 
@@ -21,8 +23,14 @@ public class FeelMain {
             // 今日の健康を記録する
             if (menu == 1) {
                 fm.one(feelList);
+                ft.two(mediList,feelList);
 
-            } else if (menu == 2) {
+            } 
+             else if (menu == 3) {
+                IO.println("アプリを終了します。");
+                break; // whileループを抜ける
+            }
+            else if (menu == 2) {
 				// リストが空だった場合
                 if (feelList.isEmpty()) {
                 IO.println("※ まだ記録がありません。");
@@ -31,11 +39,9 @@ public class FeelMain {
                 for (int i = 0; i < feelList.size(); i++) {
                     IO.println((i + 1) + ": " + feelList.get(i));
                 }
-            } else if (menu == 3) {
-                IO.println("アプリを終了します。");
-                break; // whileループを抜ける
-            }
         } 
     } 
+    continue;
+        }
+    }
 }
-} 

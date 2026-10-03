@@ -2,9 +2,7 @@ import java.util.ArrayList;
 
 public class FeelTake{
     
-        ArrayList<String> mediList = new ArrayList<>();
-
-        public void two(){
+        public void two(ArrayList<String> mediList,ArrayList<String> feelList){
         // 薬を飲んだか確認
         IO.println("番号を選択");
         IO.println("1:内服確認");
@@ -30,7 +28,7 @@ public class FeelTake{
                     }
                 } else if (choice == 2) {
                     String inputMedi = IO.readln("内服状況を入力-->");
-                    mediList.add(inputMedi);
+                    feelList.add(inputMedi);
                     IO.println("「" + inputMedi + "」を追加しました！");
                 }
             } else if (take == 2) {
