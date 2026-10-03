@@ -18,6 +18,6 @@
 〇 学んだこと・今後実装予定のもの
 - HTMLの基礎的なタグの使い方や、Javaのwhile・if・for文の使い方について実践的に学べました。
 - 入力画面のHTML/CSS実装
-- PostgreSOLとのDB連携、フレームワークSpringboot導入
+- PostgreSQLとのDB連携、フレームワークSpringboot導入
 - 内服し忘れている薬があればリマインダーできるようにする
   
