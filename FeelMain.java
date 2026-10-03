@@ -34,14 +34,14 @@ public class FeelMain {
 				// リストが空だった場合
                 if (feelList.isEmpty()) {
                 IO.println("※ まだ記録がありません。");
-                // arraylistに格納したタスクを1つずつ取り出す
+                } else {
+                // 記録がある場合:arraylistに格納したタスクを1つずつ取り出す
                 IO.println("【これまでの記録】");
                 for (int i = 0; i < feelList.size(); i++) {
                     IO.println((i + 1) + ": " + feelList.get(i));
                 }
         } 
-    } 
-    continue;
         }
+    }
     }
 }
