@@ -29,8 +29,11 @@ public class FeelTake{
                 } else if (choice == 2) {
                     String inputMedi = IO.readln("内服状況を入力-->");
                     feelList.add(inputMedi);
-                    IO.println("「" + inputMedi + "」を追加しました！");
+                    String inputTime = IO.readln("いつの分ですか？ 例:朝分など"); 
+                    feelList.add(inputTime);
+                    IO.println("「" + inputMedi + ":" + inputTime + "」を追加しました！");
                 }
+                
             } else if (take == 2) {
                 IO.println("内服しましょう！");
                 for (int i = 0; i < mediList.size(); i++) {
